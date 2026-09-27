@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>店舗情報 | にじ屋（架空）</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p class="sample">架空の見本です。実在の店舗ではありません。</p>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="index.html">にじ屋</a>
+      <nav>
+        <ul>
+          <li><a href="kodawari.html">こだわり</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="access.html">店舗情報</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="section">
+    <div class="wrap split">
+      <img src="images/ramen-shop.jpg" alt="">
+      <div>
+        <h1>店舗情報</h1>
+        <p>福岡市中央区架空町1-2-3（実在しません）</p>
+        <p class="muted">11:00-15:00 / 18:00-23:00　火曜定休（見本）</p>
+        <p class="muted">本番では、ここにGoogleマップを埋め込みます。今は架空のため地図は入れていません。</p>
+        <p><a href="https://www.instagram.com/" rel="noopener">Instagram（本番で店舗アカウントへ）</a></p>
+        <h2>問い合わせ</h2>
+        <form id="f">
+          <input name="name" required placeholder="お名前">
+          <textarea name="body" rows="4" required placeholder="内容"></textarea>
+          <button class="btn" type="submit">送る</button>
+        </form>
+        <p class="thanks" id="t">見本のため送信先はありません。本番では店に届く形にします。</p>
+      </div>
+    </div>
+  </section>
+  <footer><div class="wrap">にじ屋（架空の見本）</div></footer>
+  <script>
+    document.getElementById("f").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("t").classList.add("show");
+    });
+  </script>
+</body>
+</html>
